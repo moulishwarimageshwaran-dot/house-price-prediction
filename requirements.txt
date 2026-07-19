@@ -3,3 +3,6 @@ pandas
 numpy
 joblib
 scikit-learn
+osmnx
+geopandas
+shapely
