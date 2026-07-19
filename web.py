@@ -119,9 +119,39 @@ if st.button("📊 Evaluate Property Market Valuation Asset"):
         
         st.markdown(f"""
             <div class="metric-container">
-                <p style="color:#4B5563; font-size:14px; text-transform:uppercase; font-weight:bold; letter-spacing:1px;">Valuation Analysis Result For {location_name}</p>
-                <h1 style="color:#1E3A8A; margin:0; font-size:42px;">₹ {prediction:,.2f}</h1>
+                <p style="color:#A4B5563; font-size:14px; text-transform:uppercase; margin:0;">Estimated Market Valuation</p>
+                <h1 style="color:#1E3A8A; margin:0; font-size:42px;">₹ {prediction:.2f}</h1>
             </div>
         """, unsafe_allow_html=True)
     except Exception as e:
         st.error(f"Execution processing error encountered: {e}")
+        import streamlit as st
+from datetime import date
+
+# =======================================================
+# 1. FREE TRIAL & SUBSCRIPTION LOCK SYSTEM (TAMIL & ENG)
+# =======================================================
+# ட்ரையல் முடியும் தேதி (வருடம், மாதம், தேதி) - இத உங்களுக்கு ஏத்த மாதிரி மாத்திக்கலாம்
+TRIAL_EXPIRY_DATE = date(2026, 8, 1) 
+
+if date.today() > TRIAL_EXPIRY_DATE:
+    st.error("⚠️ Ungaludaaya Free Trial Kaalavadhi Mudindhadhu! / Your Free Trial Has Expired!")
+    st.info("Inum thodarndhu indha app use panna, keezhe ulla UPI-ku ₹99 pay panni premium access key-ah vaangunga.")
+    
+    # இங்க உங்க சொந்த GPay/PhonePe UPI ID மற்றும் ஈமெயிலை மாற்றிக்கொள்ளுங்கள்
+    st.markdown("### 💳 Pay via UPI ID: **moulish@upi**")
+    st.write("📩 Payment screenshot-ah indha email-ku anuppi premium key-ah vaangிக்கோங்க: **your-email@gmail.com**") 
+    
+    # பாஸ்வேர்ட் கேட்கும் பாக்ஸ்
+    user_key = st.text_input("Enter Premium Access Key:", type="password")
+    
+    # நீங்க செட் பண்ற ரகசிய பாஸ்வேர்ட் (உதாரணத்திற்கு: PROPHET_VIBE_2026)
+    if user_key != "PROPHET_VIBE_2026":
+        st.warning("Paisa pay pannadhuku aprom admin thandha sariyaana Access Key-ah enter pannunga.")
+        st.stop() # சரியான பாஸ்வேர்ட் போடும் வரை வெப்சைட்டின் மற்ற பகுதிகள் லோட் ஆகாது!
+    else:
+        st.success("🎉 Premium Access Activated Successfully! Enjoy your platform.")
+
+# =======================================================
+# 2. UNGA PAZHAYA CODE (இதற்கு கீழே தான் உங்க பழைய கோட் இருக்க வேண்டும்)
+# =======================================================
