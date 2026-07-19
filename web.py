@@ -75,7 +75,7 @@ st.markdown("""
         box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1); border-left: 5px solid #1E3A8A;
     }
     </style>
-""", unsafe_with_html=True)
+""", unsafe_allow_html=True)
 
 with st.sidebar:
     st.markdown("## **ProphetVibe Engine**")
@@ -122,6 +122,6 @@ if st.button("📊 Evaluate Property Market Valuation Asset"):
                 <p style="color:#4B5563; font-size:14px; text-transform:uppercase; font-weight:bold; letter-spacing:1px;">Valuation Analysis Result For {location_name}</p>
                 <h1 style="color:#1E3A8A; margin:0; font-size:42px;">₹ {prediction:,.2f}</h1>
             </div>
-        """, unsafe_with_html=True)
+        """, unsafe_allow_html=True)
     except Exception as e:
         st.error(f"Execution processing error encountered: {e}")
